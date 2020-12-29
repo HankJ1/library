@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library</title>
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Behold, The Great Library of Alexandria</h1>
+        <button class="add-new-button" type="button" onclick="revealAddBook()">Add New Book</button>
+        <div class="library-container">
+         
+        </div>
+        <div class="new-book-form">
+            <h2>New Book Info:</h2>
+            <div class="x"><span onclick="hideAddBook()">X</span></div>
+            <div><input class="title input-form" type="text" placeholder="Title"></div>
+            <div><input class="author input-form" type="text" placeholder="Author"></div>
+            <div><input class="page-count input-form" type="text" placeholder="Page Count"></div>
+            <div>
+                <label>Read?</label>
+                <input class="read" type="checkbox" style="position: relative; top: 3px; height: 18px;">
+            </div>
+            <div style="margin-top: 10px;"><button class="last-button" type="submit" onclick="submitNewBook()">Submit</button></div>
+            
+        </div>
+    </body>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+</html>

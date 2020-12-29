@@ -1,0 +1,166 @@
+:root {
+    --height: 335;
+    --width: 95;
+    --author-position: 150;
+    --pages-position: 240;
+    --font-size: 75;
+}
+html {
+    background-image: url("https://www.roomservice360.com/pub/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/a/i/airport-bookshelf-d-2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: calc(calc(var(--font-size) - 25)* 1px);
+    text-align: center;
+
+}
+.add-new-button {
+    position: relative;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 50px;
+    width: 175px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.library-container {
+    position: relative;
+    /* width: 80vw;
+    height: 80vh; */
+    display: grid;
+    grid-template-columns: repeat(11, 1fr); 
+    grid-row-gap: 5px;
+    
+}
+    .library-container > div {
+        position: relative;
+        border: 1px solid black;
+        height: calc(var(--height) * 1px);
+        min-width: calc(var(--width) * 1px);
+        width: auto;
+        white-space: normal;
+        border-radius: 5px;
+    }
+    .library-container > div:nth-child(odd) {
+        background: #ddd;
+    }
+    .library-container > div:nth-child(even) {
+        background: rgb(185, 184, 184);
+    }
+h3 {
+    margin: 8px 5px 100px 5px;
+    font-size: 16px;
+    position: absolute;
+    max-width: calc(calc(var(--width) - 10) * 1px);
+}
+h4 {
+    font-size: 14px;
+    position: absolute;
+    top: calc(var(--author-position) * 1px);
+    margin: 0 5px 0 5px;
+    max-width: calc(calc(var(--width) - 10) * 1px);
+}
+h5 {
+    margin-left: 5px;
+    margin-bottom: 20px;
+    margin-top: 7px;
+    margin-right: 5px;
+    
+}
+h6 {
+    margin-left: 5px;
+    margin-bottom: 20px;
+    margin-top: 7px;
+    margin-right: 5px;
+    font-size: 13.28px;
+    
+}
+
+.top-button {
+    position: absolute;
+    bottom: 25px;
+    margin: 20px 5px 2px 5px;
+}
+.bottom-button {
+    position: absolute;
+    bottom: 2px; 
+    margin: 1px 5px 3px 5px;
+}
+.top-text {
+    position: absolute;
+    top: calc(var(--pages-position) * 1px) !important;
+
+}
+.bottom-text {
+    position: absolute;
+    top: calc(calc(var(--pages-position) + 20) * 1px);
+}
+button {
+    font-size: 10px;
+}
+
+.new-book-form {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 300px;
+    width: 250px;
+    right: auto;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    background: white;
+    padding: 0 5px 20px 5px;
+    outline: 3px solid black;
+
+}
+    .new-book-form > div {
+        /* display: table; */
+        margin: 5px 5px 0 0;
+        padding-left: 6px;
+        /* border: 1px solid black; */
+    }
+    .input-form {
+        /* display: table-cell; */
+        margin: 0 2px 10px 5px;
+        /* border: 1px solid black; */
+        /* box-sizing: border-box;
+        -webkit-box-sizing: border-box;  */
+        width: 90%;
+        height: 20px;
+        
+    }
+    label {
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+    .last-button {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 30px;
+        width: 75px;
+        font-size: 16px;
+        border: 2px solid black;
+        border-radius: 5px;
+        
+    }
+    .x {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        font-weight: 900;
+        font-family: arial;
+        color: gray;
+    }
+        .x:hover {
+            color: black;
+            cursor: pointer;
+        }
+
